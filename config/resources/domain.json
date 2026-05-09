@@ -1,7 +1,120 @@
 {
   "version": "0.1",
   "prefixes": {
+    "schema": "http://schema.org"
   },
   "resources": {
+    "releases": {
+      "name": "release",
+      "class": "schema:MusicRelease",
+      "attributes": {
+        "title": {
+          "type": "string",
+          "predicate": "schema:name"
+        },
+        "credit": {
+          "type": "string",
+          "predicate": "schema:creditedTo"
+        },
+        "format": {
+          "type": "string",
+          "predicate": "schema:musicReleaseFormat"
+        }
+      },
+      "relationships": {
+        "tracks": {
+          "predicate": "schema:track",
+          "target": "track",
+          "cardinality": "many"
+        },
+        "group": {
+          "predicate": "schema:albumRelease",
+          "target": "release-group",
+          "cardinality": "one",
+          "inverse": true
+        }
+      },
+      "features": ["include-uri"],
+      "new-resource-base": "http://musicbrainz.org/release/"
+    },
+
+    "tracks": {
+      "name": "track",
+      "class": "schema:MusicRecording",
+      "attributes": {
+        "title": {
+          "type": "string",
+          "predicate": "schema:name"
+        },
+        "credit": {
+          "type": "string",
+          "predicate": "schema:creditedTo"
+        },
+        "duration": {
+          "type": "string",
+          "predicate": "schema:duration"
+        }
+      },
+      "relationships": {
+        "release": {
+          "predicate": "schema:track",
+          "target": "release",
+          "cardinality": "many",
+          "inverse": true
+        }
+      },
+      "features": ["include-uri"],
+      "new-resource-base": "http://musicbrainz.org/recording/"
+    },
+
+    "artists": {
+      "name": "artist",
+      "class": "schema:MusicGroup",
+      "attributes": {
+        "name": {
+          "predicate": "schema:name",
+          "type": "string"
+        }
+      },
+      "relationships": {
+        "album": {
+          "predicate": "schema:album",
+          "target": "release-group",
+          "cardinality": "many"
+        }
+      },
+      "features": ["include-uri"],
+      "new-resource-base": "http://musicbrainz.org/artist/"
+    },
+
+    "release-groups": {
+      "name": "release-group",
+      "class": "schema:MusicAlbum",
+      "attributes": {
+        "title": {
+          "predicate": "schema:name",
+          "type": "string"
+        },
+        "credit": {
+          "predicate": "schema:creditedTo",
+          "type": "string"
+        }
+      },
+      "relationships": {
+        "artist": {
+          "predicate": "schema:album",
+          "target": "artist",
+          "cardinality": "one",
+          "inverse": true
+        },
+        "releases": {
+          "predicate": "schema:albumRelease",
+          "target": "release",
+          "cardinality": "many"
+        }
+      },
+      "features": ["include-uri"],
+      "new-resource-base": "http://musicbrainz.org/release-group/"
+    }
   }
 }

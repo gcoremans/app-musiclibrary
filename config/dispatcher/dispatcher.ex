@@ -21,6 +21,18 @@ defmodule Dispatcher do
   # Run `docker-compose restart dispatcher` after updating
   # this file.
 
+  match "/artists/*path", @json do
+    Proxy.forward conn, path, "http://resource/artists/"
+  end
+
+  match "/tracks/*path", @json do
+    Proxy.forward conn, path, "http://resource/tracks/"
+  end
+
+  match "/releases/*path", @json do
+    Proxy.forward conn, path, "http://resource/releases/"
+  end
+
   match "/*_", %{ layer: :not_found } do
     send_resp( conn, 404, "Route not found.  See config/dispatcher.ex" )
   end

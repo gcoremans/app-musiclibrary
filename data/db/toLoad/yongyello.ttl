@@ -1,0 +1,277 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix mbArtist: <http://musicbrainz.org/artist/> .
+@prefix mbAlbum: <http://musicbrainz.org/release-group/> .
+@prefix mbRelease: <http://musicbrainz.org/release/> .
+@prefix mbTrack: <http://musicbrainz.org/recording/> .
+
+# Yong Yello
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e rdf:type schema:MusicGroup .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e rdf:type schema:Person .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:album mbAlbum:0ebb96e0-95f8-4ed9-99ec-021d31eb243a .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:album mbAlbum:26651446-b718-40eb-b72d-762763ae6c39 .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:album mbAlbum:45ea007e-701d-483e-b0e8-ff6e97e39b32 .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:album mbAlbum:524d0323-5578-4aa1-8c63-a11c21c19dd2 .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:album mbAlbum:81e52bab-5415-4e79-8aa6-6c20eb935cda .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:album mbAlbum:8f7d4756-a7a4-4594-b562-d520f5323e94 .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:album mbAlbum:aa39f67b-bc10-44cc-a2d5-e5fbc7d19e01 .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:album mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:album mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:album mbAlbum:e8d712d2-ecf2-4cd7-a538-03552942d44e .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:album mbAlbum:f7febae9-0959-46d0-a849-b8408026bd50 .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:alternateName "Yello Staelens" .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:birthDate "1991"^^schema:Date .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:name "Yong Yello" .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:sameAs mbArtist:04e63fbd-54f4-4018-aecc-c40cda71da3e .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:sameAs mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:sameAs mbArtist:91619d49-17c1-4f4f-9a17-3b08877850f5 .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:sameAs <http://www.isni.org/0000000465552658> .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:sameAs <https://www.discogs.com/artist/46420> .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:sameAs <https://www.discogs.com/artist/5696861> .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:sameAs <https://www.setlist.fm/setlists/yong-yello-2bcb100e.html> .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:sameAs <https://www.songkick.com/artists/10166311> .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:sameAs <https://www.yongyello.be/> .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:sameAs <https://yongyello.bandcamp.com/> .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 rdf:type schema:MusicAlbum .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:albumProductionType "http://schema.org/StudioAlbum" .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:albumReleaseType "http://schema.org/AlbumRelease" .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:byArtist mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:creditedTo "Yong Yello" .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:name "Marcel & het magnetisme van de goot" .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e rdf:type schema:MusicAlbum .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:albumProductionType "http://schema.org/StudioAlbum" .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:albumReleaseType "http://schema.org/AlbumRelease" .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:byArtist mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:creditedTo "Yong Yello" .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:name "Bennie & de banaliteit van ons bestaan" .
+
+# Bennie
+# releasegroup
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e rdf:type schema:MusicGroup .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e rdf:type schema:Person .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:name "Yong Yello" .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e rdf:type schema:MusicAlbum .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:albumProductionType "http://schema.org/StudioAlbum" .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:albumRelease mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:albumRelease mbRelease:7721368e-de10-42a2-bf3b-921435b239f0 .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:albumReleaseType "http://schema.org/AlbumRelease" .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:byArtist mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:creditedTo "Yong Yello" .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:genre "http://musicbrainz.org/genre/52faa157-6bad-4d86-a0ab-d4dec7d2513c" .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:genre "http://musicbrainz.org/genre/911c7bbb-172d-4df8-9478-dbff4296e791" .
+mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e schema:name "Bennie & de banaliteit van ons bestaan" .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be rdf:type schema:MusicRelease .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:duration "PT38M31S" .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:name "Bennie & De Banaliteit Van Ons Bestaan" .
+mbRelease:7721368e-de10-42a2-bf3b-921435b239f0 rdf:type schema:MusicRelease .
+mbRelease:7721368e-de10-42a2-bf3b-921435b239f0 schema:name "Bennie & de banaliteit van ons bestaan" .
+
+# release
+mbTrack:04795106-2857-49f1-896c-4e5affb916e8 rdf:type schema:MusicRecording .
+mbTrack:04795106-2857-49f1-896c-4e5affb916e8 schema:duration "PT03M57S" .
+mbTrack:04795106-2857-49f1-896c-4e5affb916e8 schema:isrcCode "BEP012540002" .
+mbTrack:04795106-2857-49f1-896c-4e5affb916e8 schema:name "Ik moet dringend op vakantie" .
+mbTrack:04795106-2857-49f1-896c-4e5affb916e8 schema:trackNumber "1.4" .
+mbTrack:06f0c061-78aa-42ae-9e6e-8336501a66e0 rdf:type schema:MusicRecording .
+mbTrack:06f0c061-78aa-42ae-9e6e-8336501a66e0 schema:duration "PT00M19S" .
+mbTrack:06f0c061-78aa-42ae-9e6e-8336501a66e0 schema:isrcCode "BEP012540003" .
+mbTrack:06f0c061-78aa-42ae-9e6e-8336501a66e0 schema:name "Escape reizen (skit)" .
+mbTrack:06f0c061-78aa-42ae-9e6e-8336501a66e0 schema:trackNumber "1.3" .
+mbTrack:13c01638-32db-40cb-b3ed-6b3e976e1962 rdf:type schema:MusicRecording .
+mbTrack:13c01638-32db-40cb-b3ed-6b3e976e1962 schema:duration "PT03M27S" .
+mbTrack:13c01638-32db-40cb-b3ed-6b3e976e1962 schema:isrcCode "BEP012540011" .
+mbTrack:13c01638-32db-40cb-b3ed-6b3e976e1962 schema:name "Ben er nog" .
+mbTrack:13c01638-32db-40cb-b3ed-6b3e976e1962 schema:trackNumber "1.11" .
+mbTrack:157ddaa7-658a-4407-a52c-9771f337eff0 rdf:type schema:MusicRecording .
+mbTrack:157ddaa7-658a-4407-a52c-9771f337eff0 schema:duration "PT03M46S" .
+mbTrack:157ddaa7-658a-4407-a52c-9771f337eff0 schema:isrcCode "BEP012540008" .
+mbTrack:157ddaa7-658a-4407-a52c-9771f337eff0 schema:name "Geen zin" .
+mbTrack:157ddaa7-658a-4407-a52c-9771f337eff0 schema:trackNumber "1.8" .
+mbTrack:1df24c66-8016-4f7e-b318-b6aecb45fdaf rdf:type schema:MusicRecording .
+mbTrack:1df24c66-8016-4f7e-b318-b6aecb45fdaf schema:duration "PT00M29S" .
+mbTrack:1df24c66-8016-4f7e-b318-b6aecb45fdaf schema:isrcCode "BEP012540001" .
+mbTrack:1df24c66-8016-4f7e-b318-b6aecb45fdaf schema:name "Een totaal verschillende levenstijl (intro)" .
+mbTrack:1df24c66-8016-4f7e-b318-b6aecb45fdaf schema:trackNumber "1.1" .
+mbTrack:1e91896b-6009-4c81-8b77-9303ef591724 rdf:type schema:MusicRecording .
+mbTrack:1e91896b-6009-4c81-8b77-9303ef591724 schema:duration "PT03M54S" .
+mbTrack:1e91896b-6009-4c81-8b77-9303ef591724 schema:isrcCode "BEP012540004" .
+mbTrack:1e91896b-6009-4c81-8b77-9303ef591724 schema:name "Bennie" .
+mbTrack:1e91896b-6009-4c81-8b77-9303ef591724 schema:trackNumber "1.2" .
+mbTrack:314cff8e-bbd7-4839-bcf8-0729e6aa2dd5 rdf:type schema:MusicRecording .
+mbTrack:314cff8e-bbd7-4839-bcf8-0729e6aa2dd5 schema:duration "PT02M51S" .
+mbTrack:314cff8e-bbd7-4839-bcf8-0729e6aa2dd5 schema:isrcCode "BEP012540007" .
+mbTrack:314cff8e-bbd7-4839-bcf8-0729e6aa2dd5 schema:name "Marie" .
+mbTrack:314cff8e-bbd7-4839-bcf8-0729e6aa2dd5 schema:trackNumber "1.7" .
+mbTrack:534acab2-3db0-40e5-b114-8bbb118d25cb rdf:type schema:MusicRecording .
+mbTrack:534acab2-3db0-40e5-b114-8bbb118d25cb schema:duration "PT03M59S" .
+mbTrack:534acab2-3db0-40e5-b114-8bbb118d25cb schema:isrcCode "BEP012540009" .
+mbTrack:534acab2-3db0-40e5-b114-8bbb118d25cb schema:name "Waarom ben ik zo destructief?" .
+mbTrack:534acab2-3db0-40e5-b114-8bbb118d25cb schema:trackNumber "1.9" .
+mbTrack:6d2a451d-d521-4448-aada-bb002fc6873e rdf:type schema:MusicRecording .
+mbTrack:6d2a451d-d521-4448-aada-bb002fc6873e schema:duration "PT03M37S" .
+mbTrack:6d2a451d-d521-4448-aada-bb002fc6873e schema:isrcCode "BEP012540010" .
+mbTrack:6d2a451d-d521-4448-aada-bb002fc6873e schema:name "Ik probeer" .
+mbTrack:6d2a451d-d521-4448-aada-bb002fc6873e schema:trackNumber "1.10" .
+mbTrack:76fe97d2-a8cb-4518-bcd2-5940d035b7d1 rdf:type schema:MusicRecording .
+mbTrack:76fe97d2-a8cb-4518-bcd2-5940d035b7d1 schema:duration "PT05M09S" .
+mbTrack:76fe97d2-a8cb-4518-bcd2-5940d035b7d1 schema:isrcCode "BEP012540012" .
+mbTrack:76fe97d2-a8cb-4518-bcd2-5940d035b7d1 schema:name "Zoeken naar wa liefde" .
+mbTrack:76fe97d2-a8cb-4518-bcd2-5940d035b7d1 schema:trackNumber "1.12" .
+mbTrack:9d139e24-ae1a-43ca-a606-f140f839485e rdf:type schema:MusicRecording .
+mbTrack:9d139e24-ae1a-43ca-a606-f140f839485e schema:duration "PT03M54S" .
+mbTrack:9d139e24-ae1a-43ca-a606-f140f839485e schema:isrcCode "BEP012540006" .
+mbTrack:9d139e24-ae1a-43ca-a606-f140f839485e schema:name "Tis nooit genoeg" .
+mbTrack:9d139e24-ae1a-43ca-a606-f140f839485e schema:trackNumber "1.6" .
+mbTrack:a08cc9b1-91c3-48b0-b623-0d1ef677cfa9 rdf:type schema:MusicRecording .
+mbTrack:a08cc9b1-91c3-48b0-b623-0d1ef677cfa9 schema:duration "PT03M09S" .
+mbTrack:a08cc9b1-91c3-48b0-b623-0d1ef677cfa9 schema:isrcCode "BEP012540005" .
+mbTrack:a08cc9b1-91c3-48b0-b623-0d1ef677cfa9 schema:name "We geve ni op" .
+mbTrack:a08cc9b1-91c3-48b0-b623-0d1ef677cfa9 schema:trackNumber "1.5" .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be rdf:type schema:MusicRelease .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:creditedTo "Yong Yello" .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:duration "PT38M31S" .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:gtin "5400863184759" .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:inLanguage "nl" .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:musicReleaseFormat "http://schema.org/DigitalFormat" .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:name "Bennie & De Banaliteit Van Ons Bestaan" .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:releaseOf mbAlbum:c097b2cf-1891-4ec9-a06c-90ce661d169e .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:sameAs <https://www.discogs.com/release/35151043> .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:04795106-2857-49f1-896c-4e5affb916e8 .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:06f0c061-78aa-42ae-9e6e-8336501a66e0 .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:13c01638-32db-40cb-b3ed-6b3e976e1962 .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:157ddaa7-658a-4407-a52c-9771f337eff0 .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:1df24c66-8016-4f7e-b318-b6aecb45fdaf .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:1e91896b-6009-4c81-8b77-9303ef591724 .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:314cff8e-bbd7-4839-bcf8-0729e6aa2dd5 .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:534acab2-3db0-40e5-b114-8bbb118d25cb .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:6d2a451d-d521-4448-aada-bb002fc6873e .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:76fe97d2-a8cb-4518-bcd2-5940d035b7d1 .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:9d139e24-ae1a-43ca-a606-f140f839485e .
+mbRelease:67a9d1da-e2b0-4198-acfe-dd5e60ed61be schema:track mbTrack:a08cc9b1-91c3-48b0-b623-0d1ef677cfa9 .
+
+# Marcel
+# releasegroup
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e rdf:type schema:MusicGroup .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e rdf:type schema:Person .
+mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e schema:name "Yong Yello" .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 rdf:type schema:MusicAlbum .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:albumProductionType "http://schema.org/StudioAlbum" .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:albumRelease mbRelease:4a0c7eb4-f2bb-4ffe-b1d1-62b4ecdde8a0 .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:albumRelease mbRelease:9955ac7b-c265-42bb-b5be-39606b378050 .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:albumRelease mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:albumReleaseType "http://schema.org/AlbumRelease" .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:byArtist mbArtist:e58c654e-cde5-4fa2-a356-9204475a748e .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:creditedTo "Yong Yello" .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:genre "http://musicbrainz.org/genre/52faa157-6bad-4d86-a0ab-d4dec7d2513c" .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:genre "http://musicbrainz.org/genre/911c7bbb-172d-4df8-9478-dbff4296e791" .
+mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 schema:name "Marcel & het magnetisme van de goot" .
+mbRelease:4a0c7eb4-f2bb-4ffe-b1d1-62b4ecdde8a0 rdf:type schema:MusicRelease .
+mbRelease:4a0c7eb4-f2bb-4ffe-b1d1-62b4ecdde8a0 schema:duration "PT38M34S" .
+mbRelease:4a0c7eb4-f2bb-4ffe-b1d1-62b4ecdde8a0 schema:name "Marcel & het magnetisme van de goot" .
+mbRelease:9955ac7b-c265-42bb-b5be-39606b378050 rdf:type schema:MusicRelease .
+mbRelease:9955ac7b-c265-42bb-b5be-39606b378050 schema:duration "PT38M34S" .
+mbRelease:9955ac7b-c265-42bb-b5be-39606b378050 schema:name "Marcel & het magnetisme van de goot" .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 rdf:type schema:MusicRelease .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:duration "PT38M40S" .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:name "Marcel & het magnetisme van de goot" .
+
+# release
+mbTrack:0847eab0-3de6-49b1-a82e-2aee65baed9e rdf:type schema:MusicRecording .
+mbTrack:0847eab0-3de6-49b1-a82e-2aee65baed9e schema:duration "PT00M46S" .
+mbTrack:0847eab0-3de6-49b1-a82e-2aee65baed9e schema:isrcCode "BEP012150002" .
+mbTrack:0847eab0-3de6-49b1-a82e-2aee65baed9e schema:name "Maandagmiddag (Interlude)" .
+mbTrack:0847eab0-3de6-49b1-a82e-2aee65baed9e schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:0847eab0-3de6-49b1-a82e-2aee65baed9e schema:trackNumber "1.4" .
+mbTrack:10a1924e-6776-4e4a-af45-f3298e001d43 rdf:type schema:MusicRecording .
+mbTrack:10a1924e-6776-4e4a-af45-f3298e001d43 schema:duration "PT00M49S" .
+mbTrack:10a1924e-6776-4e4a-af45-f3298e001d43 schema:isrcCode "BEP012150007" .
+mbTrack:10a1924e-6776-4e4a-af45-f3298e001d43 schema:name "Hotel mama (Interlude)" .
+mbTrack:10a1924e-6776-4e4a-af45-f3298e001d43 schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:10a1924e-6776-4e4a-af45-f3298e001d43 schema:trackNumber "1.9" .
+mbTrack:4bffff92-c825-4877-a6b7-2181d8d299da rdf:type schema:MusicRecording .
+mbTrack:4bffff92-c825-4877-a6b7-2181d8d299da schema:duration "PT03M35S" .
+mbTrack:4bffff92-c825-4877-a6b7-2181d8d299da schema:isrcCode "BEP012150008" .
+mbTrack:4bffff92-c825-4877-a6b7-2181d8d299da schema:name "Luchtkasteel" .
+mbTrack:4bffff92-c825-4877-a6b7-2181d8d299da schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:4bffff92-c825-4877-a6b7-2181d8d299da schema:sameAs mbTrack:26feb629-a83d-4321-b717-dbc7f57add90 .
+mbTrack:4bffff92-c825-4877-a6b7-2181d8d299da schema:trackNumber "1.10" .
+mbTrack:509bb41a-d87e-4f31-be60-f31e53db81ad rdf:type schema:MusicRecording .
+mbTrack:509bb41a-d87e-4f31-be60-f31e53db81ad schema:duration "PT03M23S" .
+mbTrack:509bb41a-d87e-4f31-be60-f31e53db81ad schema:isrcCode "BEP012150004" .
+mbTrack:509bb41a-d87e-4f31-be60-f31e53db81ad schema:name "Waanzin" .
+mbTrack:509bb41a-d87e-4f31-be60-f31e53db81ad schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:509bb41a-d87e-4f31-be60-f31e53db81ad schema:sameAs mbTrack:358299a5-3773-460d-a6ae-92dcc42b68cb .
+mbTrack:509bb41a-d87e-4f31-be60-f31e53db81ad schema:trackNumber "1.6" .
+mbTrack:54041e10-0d7c-45a6-a3f0-0adfc1c31cba rdf:type schema:MusicRecording .
+mbTrack:54041e10-0d7c-45a6-a3f0-0adfc1c31cba schema:duration "PT03M12S" .
+mbTrack:54041e10-0d7c-45a6-a3f0-0adfc1c31cba schema:isrcCode "BEP012150001" .
+mbTrack:54041e10-0d7c-45a6-a3f0-0adfc1c31cba schema:name "Marcel" .
+mbTrack:54041e10-0d7c-45a6-a3f0-0adfc1c31cba schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:54041e10-0d7c-45a6-a3f0-0adfc1c31cba schema:trackNumber "1.1" .
+mbTrack:56c841da-8d0d-486f-a71a-8a4d65687482 rdf:type schema:MusicRecording .
+mbTrack:56c841da-8d0d-486f-a71a-8a4d65687482 schema:duration "PT03M26S" .
+mbTrack:56c841da-8d0d-486f-a71a-8a4d65687482 schema:isrcCode "BEP012150009" .
+mbTrack:56c841da-8d0d-486f-a71a-8a4d65687482 schema:name "Londenbrug" .
+mbTrack:56c841da-8d0d-486f-a71a-8a4d65687482 schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:56c841da-8d0d-486f-a71a-8a4d65687482 schema:trackNumber "1.11" .
+mbTrack:57575ea3-8b4d-4723-8bb1-16abf67f29fd rdf:type schema:MusicRecording .
+mbTrack:57575ea3-8b4d-4723-8bb1-16abf67f29fd schema:duration "PT04M10S" .
+mbTrack:57575ea3-8b4d-4723-8bb1-16abf67f29fd schema:isrcCode "BEP012150010" .
+mbTrack:57575ea3-8b4d-4723-8bb1-16abf67f29fd schema:name "Het magnetisme van de goot" .
+mbTrack:57575ea3-8b4d-4723-8bb1-16abf67f29fd schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:57575ea3-8b4d-4723-8bb1-16abf67f29fd schema:trackNumber "1.12" .
+mbTrack:80c9934d-e6a2-461f-902e-84e4878a6a7a rdf:type schema:MusicRecording .
+mbTrack:80c9934d-e6a2-461f-902e-84e4878a6a7a schema:duration "PT04M13S" .
+mbTrack:80c9934d-e6a2-461f-902e-84e4878a6a7a schema:isrcCode "BEP012150003" .
+mbTrack:80c9934d-e6a2-461f-902e-84e4878a6a7a schema:name "Super Mario" .
+mbTrack:80c9934d-e6a2-461f-902e-84e4878a6a7a schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:80c9934d-e6a2-461f-902e-84e4878a6a7a schema:trackNumber "1.5" .
+mbTrack:8f411848-7c70-49a8-af4a-ea8c83eda7b3 rdf:type schema:MusicRecording .
+mbTrack:8f411848-7c70-49a8-af4a-ea8c83eda7b3 schema:duration "PT03M48S" .
+mbTrack:8f411848-7c70-49a8-af4a-ea8c83eda7b3 schema:isrcCode "BEP012150006" .
+mbTrack:8f411848-7c70-49a8-af4a-ea8c83eda7b3 schema:name "In Amsterdam" .
+mbTrack:8f411848-7c70-49a8-af4a-ea8c83eda7b3 schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:8f411848-7c70-49a8-af4a-ea8c83eda7b3 schema:trackNumber "1.8" .
+mbTrack:b6276b47-c947-413f-b117-362c84d6b860 rdf:type schema:MusicRecording .
+mbTrack:b6276b47-c947-413f-b117-362c84d6b860 schema:duration "PT03M33S" .
+mbTrack:b6276b47-c947-413f-b117-362c84d6b860 schema:isrcCode "BEP012011001" .
+mbTrack:b6276b47-c947-413f-b117-362c84d6b860 schema:name "Cirkels" .
+mbTrack:b6276b47-c947-413f-b117-362c84d6b860 schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:b6276b47-c947-413f-b117-362c84d6b860 schema:sameAs mbTrack:c1ae362e-6886-41ff-861f-dc88e09ea5e1 .
+mbTrack:b6276b47-c947-413f-b117-362c84d6b860 schema:trackNumber "1.2" .
+mbTrack:f0de42cd-9162-42e6-8a26-15f627c98f25 rdf:type schema:MusicRecording .
+mbTrack:f0de42cd-9162-42e6-8a26-15f627c98f25 schema:duration "PT03M23S" .
+mbTrack:f0de42cd-9162-42e6-8a26-15f627c98f25 schema:isrcCode "BEP011995001" .
+mbTrack:f0de42cd-9162-42e6-8a26-15f627c98f25 schema:name "Als ge slaapt" .
+mbTrack:f0de42cd-9162-42e6-8a26-15f627c98f25 schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:f0de42cd-9162-42e6-8a26-15f627c98f25 schema:sameAs mbTrack:a33e0219-8b8d-4a61-a32e-6d361cb07ad0 .
+mbTrack:f0de42cd-9162-42e6-8a26-15f627c98f25 schema:trackNumber "1.3" .
+mbTrack:fa95fed1-e6f7-4323-9996-c3592d7e5b74 rdf:type schema:MusicRecording .
+mbTrack:fa95fed1-e6f7-4323-9996-c3592d7e5b74 schema:duration "PT04M16S" .
+mbTrack:fa95fed1-e6f7-4323-9996-c3592d7e5b74 schema:isrcCode "BEP012150005" .
+mbTrack:fa95fed1-e6f7-4323-9996-c3592d7e5b74 schema:name "De Smet" .
+mbTrack:fa95fed1-e6f7-4323-9996-c3592d7e5b74 schema:producer mbArtist:3f8d8204-260e-4471-949e-f701e0288860 .
+mbTrack:fa95fed1-e6f7-4323-9996-c3592d7e5b74 schema:trackNumber "1.7" .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 rdf:type schema:MusicRelease .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:catalogNumber "PIASB730CD" .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:creditedTo "Yong Yello" .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:duration "PT38M40S" .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:gtin "5400863055271" .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:inLanguage "nl" .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:musicReleaseFormat "http://schema.org/CDFormat" .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:name "Marcel & het magnetisme van de goot" .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:recordLabel <http://musicbrainz.org/label/c3265831-5978-47c0-bcf3-1bd80a63bd04> .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:releaseOf mbAlbum:b6bd66cc-d4cb-427d-a059-424988e35668 .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:sameAs <https://www.discogs.com/release/20795005> .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:0847eab0-3de6-49b1-a82e-2aee65baed9e .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:10a1924e-6776-4e4a-af45-f3298e001d43 .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:4bffff92-c825-4877-a6b7-2181d8d299da .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:509bb41a-d87e-4f31-be60-f31e53db81ad .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:54041e10-0d7c-45a6-a3f0-0adfc1c31cba .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:56c841da-8d0d-486f-a71a-8a4d65687482 .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:57575ea3-8b4d-4723-8bb1-16abf67f29fd .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:80c9934d-e6a2-461f-902e-84e4878a6a7a .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:8f411848-7c70-49a8-af4a-ea8c83eda7b3 .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:b6276b47-c947-413f-b117-362c84d6b860 .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:f0de42cd-9162-42e6-8a26-15f627c98f25 .
+mbRelease:c8d8257f-1677-4aa2-94da-571a7a52c554 schema:track mbTrack:fa95fed1-e6f7-4323-9996-c3592d7e5b74 .
