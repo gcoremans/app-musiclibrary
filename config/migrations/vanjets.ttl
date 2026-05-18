@@ -1,5 +1,5 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix schema: <http://schema.org> .
+@prefix schema: <http://schema.org/> .
 @prefix mbArtist: <http://musicbrainz.org/artist/> .
 @prefix mbAlbum: <http://musicbrainz.org/release-group/> .
 @prefix mbRelease: <http://musicbrainz.org/release/> .
