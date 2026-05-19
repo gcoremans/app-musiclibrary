@@ -1,7 +1,26 @@
 services:
   identifier:
+    security_opt:
+      - label=disable
     ports:
-      - "80:80"
+      - "1080:1080"
+  dispatcher:
+    security_opt:
+      - label=disable
+  resource:
+    security_opt:
+      - label=disable
+  migrations:
+    security_opt:
+      - label=disable
+  delta-notifier:
+    security_opt:
+      - label=disable
+  security:
+    security_opt:
+      - label=disable
   triplestore:
+    security_opt:
+      - label=disable
     ports:
       - "8890:8890"

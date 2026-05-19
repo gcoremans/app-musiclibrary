@@ -17,7 +17,7 @@ services:
   dispatcher:
     image: semtech/mu-dispatcher:2.1.1
     volumes:
-      - ./config/dispatcher:/config
+      - ./config/dispatcher:/config:ro,z
     labels:
       - "logging=true"
     logging: *default-logging
@@ -26,39 +26,44 @@ services:
   resource:
     image: semtech/mu-cl-resources:1.27.2
     volumes:
-      - ./config/resources:/config
+      - ./config/resources:/config:ro,z
     labels:
       - "logging=true"
     logging: *default-logging
 
   migrations:
     image: semtech/mu-migrations-service:0.9.0
-    links:
-      - triplestore:database
     environment:
       MU_SPARQL_TIMEOUT: 600
     volumes:
-      - ./config/migrations:/data/migrations
+      - ./config/migrations:/data/migrations:ro,z
     labels:
       - "logging=true"
     logging: *default-logging
+    networks:
+        triplestore:
 
   delta-notifier:
     image: semtech/mu-delta-notifier:0.4.0
     volumes:
-      - ./config/delta:/config/
+      - ./config/delta:/config/:ro,z
     labels:
       - "logging=true"
     logging: *default-logging
 
-  database:
+  security:
     image: semtech/sparql-parser:0.0.15
     volumes:
-      - ./config/authorization/:/config/
-      - ./data/authorization/:/data/
+      - ./config/authorization/:/config/:ro,z
+      - ./data/authorization:/data/:rw,Z
     labels:
       - "logging=true"
     logging: *default-logging
+    networks:
+        triplestore:
+        default:
+            aliases:
+                - database
 
   triplestore:
     image: redpencil/virtuoso:1.3.0
@@ -66,8 +71,19 @@ services:
       SPARQL_UPDATE: "true"
       DEFAULT_GRAPH: "http://mu.semte.ch/graphs/public"
     volumes:
-      - ./data/db:/data
-      - ./config/virtuoso/virtuoso.ini:/data/virtuoso.ini
+      - ./config/virtuoso/virtuoso.ini:/data/virtuoso.ini:ro,z
+      - triplestore_data:/data/:Z
     labels:
       - "logging=true"
     logging: *default-logging
+    networks:
+        triplestore:
+            aliases:
+                - database
+
+networks:
+    default: {}
+    triplestore: {}
+
+volumes:
+    triplestore_data: {}
