@@ -22,9 +22,9 @@
         }
       },
       "relationships": {
-        "tracks": {
+        "track": {
           "predicate": "schema:track",
-          "target": "track",
+          "target": "recording",
           "cardinality": "many"
         },
         "group": {
@@ -38,8 +38,8 @@
       "new-resource-base": "http://musicbrainz.org/release/"
     },
 
-    "tracks": {
-      "name": "track",
+    "recordings": {
+      "name": "recording",
       "class": "schema:MusicRecording",
       "attributes": {
         "title": {
@@ -61,6 +61,11 @@
           "target": "release",
           "cardinality": "many",
           "inverse": true
+        },
+        "artist": {
+          "predicate": "schema:byArtist",
+          "target": "artist",
+          "cardinality": "many"
         }
       },
       "features": ["include-uri"],
@@ -104,7 +109,7 @@
         "artist": {
           "predicate": "schema:album",
           "target": "artist",
-          "cardinality": "one",
+          "cardinality": "many",
           "inverse": true
         },
         "releases": {
