@@ -33,6 +33,10 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://resource/releases/"
   end
 
+  match "/fetch/*path", @json do
+    Proxy.forward conn, path, "http://musicbrainz-fetch/fetch"
+  end
+
   match "/*_", %{ layer: :not_found } do
     send_resp( conn, 404, "Route not found.  See config/dispatcher.ex" )
   end

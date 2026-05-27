@@ -81,6 +81,18 @@ services:
             aliases:
                 - database
 
+  musicbrainz-fetch:
+    image: semtech/mu-javascript-template
+    ports:
+      - "1280:80"
+      - "9229:9229"
+    environment:
+      NODE_ENV: "development"
+    security_opt:
+      - label=disable
+    volumes:
+      - ../musicbrainz-fetch-service/:/app/
+
 networks:
     default: {}
     triplestore: {}
