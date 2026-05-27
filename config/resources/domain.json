@@ -22,7 +22,7 @@
         }
       },
       "relationships": {
-        "track": {
+        "tracks": {
           "predicate": "schema:track",
           "target": "recording",
           "cardinality": "many"
@@ -56,13 +56,13 @@
         }
       },
       "relationships": {
-        "release": {
+        "on": {
           "predicate": "schema:track",
           "target": "release",
           "cardinality": "many",
           "inverse": true
         },
-        "artist": {
+        "by": {
           "predicate": "schema:byArtist",
           "target": "artist",
           "cardinality": "many"
@@ -82,10 +82,16 @@
         }
       },
       "relationships": {
-        "album": {
+        "albums": {
           "predicate": "schema:album",
           "target": "release-group",
           "cardinality": "many"
+        },
+        "tracks": {
+          "predicate": "schema:byArtist",
+          "target": "recording",
+          "cardinality": "many",
+          "inverse": true
         }
       },
       "features": ["include-uri"],
@@ -106,7 +112,7 @@
         }
       },
       "relationships": {
-        "artist": {
+        "artists": {
           "predicate": "schema:album",
           "target": "artist",
           "cardinality": "many",
