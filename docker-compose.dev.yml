@@ -3,7 +3,7 @@ services:
     security_opt:
       - label=disable
     ports:
-      - "1080:1080"
+      - "1080:80"
   dispatcher:
     security_opt:
       - label=disable

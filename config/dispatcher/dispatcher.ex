@@ -25,16 +25,16 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://resource/artists/"
   end
 
-  match "/tracks/*path", @json do
-    Proxy.forward conn, path, "http://resource/tracks/"
-  end
-
   match "/releases/*path", @json do
     Proxy.forward conn, path, "http://resource/releases/"
   end
 
-  match "/fetch/*path", @json do
-    Proxy.forward conn, path, "http://musicbrainz-fetch/fetch"
+  match "/release-groups/*path", @json do
+    Proxy.forward conn, path, "http://resource/release-groups/"
+  end
+
+  post "/fetch", @json do
+    Proxy.forward conn, [], "http://musicbrainz-fetch/fetch"
   end
 
   match "/*_", %{ layer: :not_found } do
