@@ -1,0 +1,26 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX people: <http://ext.data.gift/people/>
+PREFIX accounts: <http://ext.data.gift/accounts/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX mu: <http://mu.semte.ch/vocabularies/core/>
+PREFIX account: <http://mu.semte.ch/vocabularies/account/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+INSERT DATA {
+   GRAPH <http://mu.semte.ch/graphs/users> {
+     people:606ff0fa-6860-4959-bd2a-8bce3926a5ae a foaf:Person ;
+                   foaf:name "Test2" ;
+                   foaf:account accounts:b7ea5f94-07b6-4814-9195-0a5e0498b016 ;
+                   mu:uuid "606ff0fa-6860-4959-bd2a-8bce3926a5ae" ;
+                   dcterms:created "2026-06-01T14:28:22+00:00"^^xsd:dateTime ;
+                   dcterms:modified "2026-06-01T14:28:22+00:00"^^xsd:dateTime .
+     accounts:b7ea5f94-07b6-4814-9195-0a5e0498b016 a foaf:OnlineAccount ;
+                   foaf:accountName "test2" ;
+                   mu:uuid "b7ea5f94-07b6-4814-9195-0a5e0498b016" ;
+                   account:password """$2a$12$ZFhrWH5undkkaMbBwfzlCOJ00fWPRYFDJi.64Ed88tuMqI3DQZo3y""" ;
+                   account:salt "3dbb402230a04e6cc1879959db9897fc" ;
+                   account:status <http://mu.semte.ch/vocabularies/account/status/active> ;
+                   dcterms:created "2026-06-01T14:28:22+00:00"^^xsd:dateTime ;
+                   dcterms:modified "2026-06-01T14:28:22+00:00"^^xsd:dateTime .
+    }
+}

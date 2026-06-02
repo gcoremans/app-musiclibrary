@@ -93,6 +93,15 @@ services:
     volumes:
       - ../musicbrainz-fetch-service/:/app/
 
+  login:
+    image: semtech/mu-login-service:3.0.0
+    environment:
+      USERS_GRAPH: http://mu.semte.ch/graphs/users
+      SESSIONS_GRAPH: http://mu.semte.ch/graphs/sessions
+
+  registration:
+    image: semtech/mu-registration-service:2.8.0
+
 networks:
     default: {}
     triplestore: {}

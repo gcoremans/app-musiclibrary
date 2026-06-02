@@ -4,6 +4,10 @@ services:
       - label=disable
     ports:
       - "1080:80"
+    environment:
+      LOG_ALLOWED_GROUPS: true
+      LOG_SESSION: true
+      
   dispatcher:
     security_opt:
       - label=disable
@@ -24,3 +28,12 @@ services:
       - label=disable
     ports:
       - "8890:8890"
+
+  login:
+    security_opt:
+      - label=disable
+  registration:
+    security_opt:
+      - label=disable
+    ports:
+      - "1081:80"
