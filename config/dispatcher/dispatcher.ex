@@ -33,6 +33,18 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://resource/release-groups/"
   end
 
+  match "/persons/*path", @json do
+    Proxy.forward conn, path, "http://resource/persons/"
+  end
+
+  match "/accounts/*path", @json do
+    Proxy.forward conn, path, "http://resource/accounts/"
+  end
+
+  match "/collections/*path", @json do
+    Proxy.forward conn, path, "http://resource/collections/"
+  end
+
   post "/fetch", @json do
     Proxy.forward conn, [], "http://musicbrainz-fetch/fetch"
   end

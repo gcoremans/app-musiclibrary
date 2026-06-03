@@ -1,7 +1,8 @@
 {
   "version": "0.1",
   "prefixes": {
-    "schema": "http://schema.org/"
+    "schema": "http://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/"
   },
   "resources": {
     "releases": {
@@ -126,6 +127,80 @@
       },
       "features": ["include-uri"],
       "new-resource-base": "http://musicbrainz.org/release-group/"
+    },
+
+
+
+    "persons": {
+      "name": "person",
+      "class": "foaf:Person",
+      "attributes": {
+        "name": {
+          "predicate": "foaf:name",
+          "type": "string"
+        }
+      },
+      "relationships": {
+        "account": {
+          "predicate": "foaf:account",
+          "target": "account",
+          "cardinality": "one"
+        }
+      },
+      "features": ["include-uri"],
+      "new-resource-base": "http://mu.semte.ch/vocabularies/people/"
+    },
+
+    "accounts": {
+      "name": "account",
+      "class": "foaf:OnlineAccount",
+      "attributes": {
+        "name": {
+          "predicate": "foaf:accountName",
+          "type": "string"
+        }
+      },
+      "relationships": {
+        "person": {
+          "predicate": "foaf:account",
+          "target": "person",
+          "cardinality": "one",
+          "inverse": true
+        },
+        "collections": {
+          "predicate": "schema:owner",
+          "target": "collection",
+          "cardinality": "many",
+          "inverse": true
+        }
+      },
+      "features": ["include-uri"],
+      "new-resource-base": "http://mu.semte.ch/vocabularies/accounts/"
+    },
+
+    "collections": {
+      "name": "collection",
+      "class": "schema:Collection",
+      "attributes": {
+        "name": {
+          "predicate": "schema:name",
+          "type": "string"
+        }
+      },
+      "relationships": {
+        "owner": {
+          "predicate": "schema:owner",
+          "target": "account",
+          "cardinality": "one"
+        },
+        "parts": {
+          "predicate": "schema:hasPart",
+          "target": "release",
+          "cardinality": "many"
+        }
+      },
+      "features": ["include-uri"],
+      "new-resource-base": "http://mu.semte.ch/vocabularies/collections/"
     }
   }
 }

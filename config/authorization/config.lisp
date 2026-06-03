@@ -2,18 +2,18 @@
 ;;; delta messenger
 (in-package :delta-messenger)
 
-;; (push (make-instance 'delta-logging-handler) *delta-handlers*) ;; enable if delta messages should be logged on terminal
+(push (make-instance 'delta-logging-handler) *delta-handlers*) ;; enable if delta messages should be logged on terminal
 (add-delta-messenger "http://delta-notifier/")
 (setf *log-delta-messenger-message-bus-processing* nil) ;; set to t for extra messages for debugging delta messenger
 
 ;;;;;;;;;;;;;;;;;
 ;;; configuration
 (in-package :client)
-(setf *log-sparql-query-roundtrip* nil) ; change nil to t for logging requests to virtuoso (and the response)
+(setf *log-sparql-query-roundtrip* t) ; change nil to t for logging requests to virtuoso (and the response)
 (setf *backend* "http://triplestore:8890/sparql")
 
 (in-package :server)
-(setf *log-incoming-requests-p* nil) ; change nil to t for logging all incoming requests
+(setf *log-incoming-requests-p* t) ; change nil to t for logging all incoming requests
 
 ;;;;;;;;;;;;;;;;
 ;;; prefix types
@@ -37,6 +37,7 @@
   :mu "http://mu.semte.ch/vocabularies/core/"
   :session "http://mu.semte.ch/vocabularies/session/"
   :ext "http://mu.semte.ch/vocabularies/ext/"
+  :foaf "http://xmlns.com/foaf/0.1/"
   ;; Custom prefix URIs here, prefix casing is ignored
   )
 
@@ -54,6 +55,16 @@
   (_ -> _)) ; public allows ANY TYPE -> ANY PREDICATE in the direction
             ; of the arrow
 
+(define-graph users ("http://mu.semte.ch/graphs/users")
+  ("foaf:OnlineAccount"
+   -> "foaf:accountName")
+  ("foaf:Person"
+   -> "foaf:name"
+   -> "foaf:account"))
+
+(define-graph collections ("http://mu.semte.ch/graphs/collections/")
+  (_ -> _))
+
 ;; Example:
 ;; (define-graph company ("http://mu.semte.ch/graphs/companies/")
 ;;   ("foaf:OnlineAccount"
@@ -68,6 +79,23 @@
 ;; User roles
 
 (supply-allowed-group "public")
+
+(supply-allowed-group "user"
+  :parameters ("user")
+  :query "PREFIX session: <http://mu.semte.ch/vocabularies/session/>
+          PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+          SELECT DISTINCT ?user ?account WHERE {
+            <SESSION_ID> session:account ?account.
+            ?account foaf:accountName ?user.
+          }")
+
+(grant (read write)
+       :to-graph collections
+       :for-allowed-group "user")
+
+(grant (read)
+       :to-graph users
+       :for-allowed-group "public")
 
 (grant (read write)
        :to-graph public
