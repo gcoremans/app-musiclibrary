@@ -97,9 +97,14 @@
        :to-graph users
        :for-allowed-group "public")
 
-(grant (read write)
+(grant (read)
        :to-graph public
        :for-allowed-group "public")
+
+(grant (read write)
+       :to-graph public
+       :for-allowed-group "public"
+       :scopes '("http://services.semantic.works/musicbrainz-fetch-service"))
 
 ;; example:
 

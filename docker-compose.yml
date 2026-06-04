@@ -88,6 +88,7 @@ services:
       - "9229:9229"
     environment:
       NODE_ENV: "development"
+      DEFAULT_MU_AUTH_SCOPE: "http://services.semantic.works/musicbrainz-fetch-service"
     security_opt:
       - label=disable
     volumes:
